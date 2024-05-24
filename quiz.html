@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Interactive Quiz</title>
+
+    <link rel="stylesheet" href="quizclr.css">
+    
+</head>
+<body>
+
+<script src="quizfn.js"></script>
+
+    <div id="body1">
+        <h1>Interactive Quiz</h1>
+        <form id="Q_frm" onsubmit="calculateScore(); return false;">
+            <div class="question">
+                <p>1. What is the highest mountain peak in India??</p>
+                <div class="ans_opt">
+                    <label><input type="radio" name="q1" value="Mount Everest"> Mount Everest</label>
+                    <label><input type="radio" name="q1" value="K2">K2 </label>
+                    <label><input type="radio" name="q1" value="Kangchenjunga">Kangchenjunga </label>
+                    <label><input type="radio" name="q1" value="Kantal"> Kantal</label>
+                </div>
+            </div>
+        </br>
+            <div class="question">
+                <p>2. The Taj Mahal, one of the Seven Wonders of the World, is located in which Indian city?</p>
+                <div class="ans_opt">
+                    <label><input type="radio" name="q2" value="Jaipur"> Jaipur</label>
+                    <label><input type="radio" name="q2" value="Agra"> Agra</label>
+                    <label><input type="radio" name="q2" value="Varanasi">Varanasi </label>
+                    <label><input type="radio" name="q2" value="Hyderabad">Hyderabad </label>
+                </div>
+            </div>
+        </br>
+            <div class="question">
+                <p>3. Which Indian state is known as the "Land of Five Rivers"?</p>
+                <div class="ans_opt">
+                    <label><input type="radio" name="q3" value="Punjab">Punjab </label>
+                    <label><input type="radio" name="q3" value="Haryana"> Haryana</label>
+                    <label><input type="radio" name="q3" value="Shimla"> Shimla</label>
+                    <label><input type="radio" name="q3" value=" Rajasthan">  Rajasthan</label>
+                </div>
+            </div>
+        </br>
+            <button type="submit" >Submit </button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+</body>
+</html>
